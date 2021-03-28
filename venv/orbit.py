@@ -21,14 +21,10 @@ class Orbit:
 
     # decrease/increase the pecentage of crater
     def percentage_change_in_crater(self, percentChange):
-        if percentChange > 0 :
-            change = (ORBIT1_CRATER * percentChange)/100
-            self.orbit1Crater = ORBIT1_CRATER - change
-            change = (ORBIT2_CRATER * percentChange) / 100
-            self.orbit2Crater = ORBIT2_CRATER - change
-        else:
-            self.orbit1Crater = ORBIT1_CRATER
-            self.Orbit2Crater = ORBIT2_CRATER
+        change = (ORBIT1_CRATER * percentChange)/100
+        self.orbit1Crater = ORBIT1_CRATER - change
+        change = (ORBIT2_CRATER * percentChange) / 100
+        self.orbit2Crater = ORBIT2_CRATER - change
 
 
     # depending upon the weather, changes crater in each orbit
