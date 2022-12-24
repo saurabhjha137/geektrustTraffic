@@ -1,6 +1,7 @@
 from orbit import Orbit
 from vehicle import Vehicle
 
+
 class CalculateTime:
     def find_total_time(self, weather, orbit1Speed, orbit2Speed):
         orbitObject = Orbit()
